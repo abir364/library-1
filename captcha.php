@@ -1,13 +1,13 @@
-<?php 
+<?php
+header("Content-Type: image/png");
 session_start(); 
 $text = 99999; 
 $_SESSION["vercode"] = $text; 
-$height = 25; 
-$width = 65;   
-$image_p = imagecreate($width, $height); 
-$black = imagecolorallocate($image_p, 0, 0, 0); 
-$white = imagecolorallocate($image_p, 255, 255, 255); 
-$font_size = 14; 
-imagestring($image_p, $font_size, 5, 5, $text, $white); 
-imagepng($image_p); 
+$im = @imagecreate(110, 20)
+    or die("Cannot Initialize new GD image stream");
+$background_color = imagecolorallocate($im, 0, 0, 0);
+$text_color = imagecolorallocate($im, 233, 14, 91);
+imagestring($im, 1, 5, 5,  $text, $text_color);
+imagepng($im);
+imagedestroy($im);
 ?>
