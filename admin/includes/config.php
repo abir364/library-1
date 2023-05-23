@@ -1,6 +1,6 @@
 <?php 
 // DB credentials.
-define('DB_HOST','192.168.0.65');
+define('DB_HOST','dbserver');
 define('DB_USER','ecomuser');
 define('DB_PASS','ecompassword');
 define('DB_NAME','library');
