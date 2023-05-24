@@ -1,8 +1,8 @@
 <?php 
 // DB credentials.
-define('DB_HOST','dbserver');
-define('DB_USER','ecomuser');
-define('DB_PASS','ecompassword');
+define('DB_HOST','192.168.20.65');
+define('DB_USER','librarian');
+define('DB_PASS','librarypass');
 define('DB_NAME','library');
 // Establish database connection.
 try
